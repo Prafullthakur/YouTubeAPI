@@ -102,10 +102,10 @@ function requestVideoPlaylist(playlistID)
         playlistID : playlistID,
         part: 'snippet',
         maxResults: 1
-};
+    };
  const request = gapi.client.youtube.playlistItems.list(requestOptions);
    request.execute(response=>
    {
    	console.log(response);
-   })
+   });
 }
