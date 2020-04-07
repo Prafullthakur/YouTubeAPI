@@ -97,14 +97,14 @@ function numberWithCommas(x){
 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
 }
 function requestVideoPlaylist(playlistID)
-{   console.log('hello');
+{  
 	const requestOptions = {
         playlistID : playlistID,
         part: 'snippet',
         maxResults: 10
 }
- const resquest = gapi.client.youtube.playlistItems.list(requestOptions);
-   resquest.execute(response=>
+ const request = gapi.client.youtube.playlistItems.list(requestOptions);
+   request.execute(response=>
    {
    	console.log(response);
    })
