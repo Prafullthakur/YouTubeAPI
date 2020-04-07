@@ -1,4 +1,4 @@
-const Client_Id = "776003587884-l6e3teijivq9qavcrhcu9nr4pekv4iit.apps.googleusercontent.com";
+const Client_Id = "776003587884-efflfr23k2jio0te9tpr9ft99snbujm8.apps.googleusercontent.com";
 const Api_Key = "AIzaSyA1-t99CLHEm5NquWnTrEDDrIc7eKpRhgU";
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest"];
 const SCOPES = 'https://www.googleapis.com/auth/youtube.readonly';
