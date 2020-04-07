@@ -14,7 +14,7 @@ function handleClientLoad()
 {
 	gapi.load('client:auth2', initClient);
 }
-function initClient()
+window.onLoadCallback = function initClient()
 {
 	gapi.client.init({
 		discoveryDocs: DISCOVERY_DOCS,
