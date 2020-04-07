@@ -87,8 +87,8 @@ function getChannel(Channel)
 		    <a class="btn grey darken-2 target="_blank" href="https://youtube.com/${channel.snippet.customUrl}">Visit Channel</a>
 		    `;
 		    showChannelData(output);
-		    const playlistid = channel.contentDetails.relatedPlaylists.uploads;
-	         requestVideoPlaylist(playlistid);
+		    const playlistID = channel.contentDetails.relatedPlaylists.uploads;
+	         requestVideoPlaylist(playlistID);
 	})
 	.catch(err=> alert('No Channel By That Name'));
 }
@@ -99,7 +99,7 @@ function numberWithCommas(x){
 function requestVideoPlaylist(playlistID)
 {  
 	const requestOptions = {
-	     playlistid : playlistid,
+	     playlistid : playlistID,
         part: 'snippet',
         maxResults: 1
     };
