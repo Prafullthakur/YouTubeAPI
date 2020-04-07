@@ -20,7 +20,7 @@ function handleClientLoad()
 		scope: SCOPES,
 	}).then(()=>{
 		    gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
-		    updateSigninStatus(gapi.auth2.AuthIntanse().isSignedIn.get()); 
+		    updateSigninStatus(gapi.auth2.getAuthIntanse().isSignedIn.get()); 
 		    authorizeButton.onclick = handleAuthClick;
 		    signoutButton.onclick = handleSignoutClick;
 	})
