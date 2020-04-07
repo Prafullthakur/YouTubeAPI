@@ -72,11 +72,11 @@ function getChannel(Channel)
 
 		const output = `
 		   <ul class="collection">
-		     <li class="collection-items">ID: ${channel.snippet.title}</li>
+		     <li class="collection-items">TITLE: ${channel.snippet.title}</li>
 		     <li class="collection-items">ID: ${channel.id}</li>
-		     <li class="collection-items">ID: ${channel.statistics.subscriberCount}</li>
-		     <li class="collection-items">ID: ${channel.statistics.viewCount}</li>
-		     <li class="collection-items">ID: ${channel.statistics.videoCount}</li>
+		     <li class="collection-items">SUBSCRIBERCOUNT: ${channel.statistics.subscriberCount}</li>
+		     <li class="collection-items">VIEWCOUNT: ${channel.statistics.viewCount}</li>
+		     <li class="collection-items">VIDEOCOUNT: ${channel.statistics.videoCount}</li>
 		    </ul>
 		    <p>${channel.snippet.description}</p>
 		    <hr>
