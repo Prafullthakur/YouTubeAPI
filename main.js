@@ -9,7 +9,11 @@ const channelForm = document.getElementById('Channel-form');
 const channelInput = document.getElementById('channel-input');
 const videoContainer = document.getElementById('video-container');
 const defaultChannel = 'techguyweb';
-
+channerForm.addEventListener('submit',e=>{
+	e.preventDefault();
+	const channel = channelInput.value;
+	getChannel(channel);
+})
 function handleClientLoad()
 {
 	gapi.load('client:auth2', function()
