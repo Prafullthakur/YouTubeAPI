@@ -64,6 +64,13 @@ function getChannel(Channel)
 	})
 	.then(response=>{
 		console.log(response);
+		const channel = response.ressult.items[0];
+
+		const output = `
+		   <ul class="collection">
+		     <li class="collection-items">ID: ${channel.id}</li>
+		    </ul>
+		    `;
 	})
 	.catch(err=> alert('No Channel By That Name'));
 }
