@@ -12,7 +12,7 @@ const defaultChannel = 'techguyweb';
 
 function handleClientLoad()
 {
-	gapi.load('client:auth2', initClient);
+	gapi.load('client:auth2', window.onLoadCallback);
 }
 window.onLoadCallback = function initClient()
 {
