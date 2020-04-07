@@ -88,7 +88,7 @@ function getChannel(Channel)
 		    `;
 		    showChannelData(output);
 		    const playlistid = channel.contentDetails.relatedPlaylists.uploads;
-	         requestVideoPlaylist(playlistID);
+	         requestVideoPlaylist(playlistid);
 	})
 	.catch(err=> alert('No Channel By That Name'));
 }
