@@ -23,7 +23,7 @@ function handleClientLoad()
 		    authorizeButton.onclick = handleAuthClick;
 		    signoutButton.onclick = handleSignoutClick;
 	})
-};
+});
 }
 
 function updateSigninStatus(isSignedIn)
