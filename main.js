@@ -96,7 +96,7 @@ function getChannel(Channel)
 function numberWithCommas(x){
 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
 }
-function requestVideoPlaylist(playlistID)
+/*function requestVideoPlaylist(playlistID)
 {
 	const requestOptions = {
 	     playlistid : playlistID,
@@ -107,4 +107,4 @@ const request = gapi.client.youtube.playlistItems.list(requestOptions);
    request.execute(response=> {
    	console.log(response);
    });
-}
+}*/
