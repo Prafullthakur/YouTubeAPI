@@ -35,7 +35,7 @@ function updateSigninStatus(isSignedIn)
 		signoutButton.style.display='block';
 		content.style.display='block';
 		videoContainer.style.display='block';
-		getChannel(defaultChannel);
+	
 	}
 	else
 	{
@@ -55,7 +55,3 @@ function handleSignoutClick()
 	gapi.auth2.getAuthInstance().signOut();
 }
 
-function getChannel(Channel)
-{
-      console.log(Channel);
-}
