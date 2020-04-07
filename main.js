@@ -55,3 +55,7 @@ function handleSignoutClick()
 	gapi.auth2.getAuthInstance().signOut();
 }
 
+getChannel(Channel)
+{
+      console.log(Channel);
+}

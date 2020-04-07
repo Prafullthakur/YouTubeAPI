@@ -2,7 +2,7 @@ body
 {
 	background: white;
 }
-.content{
+.content,#authorise-button,#signout-button{
 	display: none;
 
 }
