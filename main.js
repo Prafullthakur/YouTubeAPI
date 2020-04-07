@@ -12,18 +12,7 @@ const defaultChannel = 'techguyweb';
 
 function handleClientLoad()
 {
-	gapi.load('client:auth2', initClient);
-}
-
-var gapiPromise = (function(){
-  var deferred = $.Deferred();
-  window.onLoadCallback = function(){
-    deferred.resolve(gapi);
-  };
-  return deferred.promise()
-}());
-
-var authInited = gapiPromise.then(function initClient()
+	gapi.load('client:auth2', function()
 {
 	gapi.client.init({
 		discoveryDocs: DISCOVERY_DOCS,
@@ -34,7 +23,8 @@ var authInited = gapiPromise.then(function initClient()
 		    authorizeButton.onclick = handleAuthClick;
 		    signoutButton.onclick = handleSignoutClick;
 	})
-})
+};
+}
 
 function updateSigninStatus(isSignedIn)
 {
