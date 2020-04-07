@@ -87,7 +87,7 @@ function getChannel(Channel)
 		    <a class="btn grey darken-2 target="_blank" href="https://youtube.com/${channel.snippet.customUrl}">Visit Channel</a>
 		    `;
 		    showChannelData(output);
-		    const playlistID = Channel.contentDetails.relatedPlaylists.uploads;
+		    const playlistID = channel.contentDetails.relatedPlaylists.uploads;
 	         requestVideoPlaylist(playlistID);
 	})
 	.catch(err=> alert('No Channel By That Name'));
