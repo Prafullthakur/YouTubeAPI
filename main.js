@@ -97,7 +97,7 @@ function numberWithCommas(x){
 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
 }
 function requestVideoPlaylist(playlistID)
-{  
+{  console.log(playlistID);
 	const requestOptions = {
 	     playlistid : playlistID,
         part: 'snippet',
