@@ -103,7 +103,7 @@ function requestVideoPlaylist(playlistID)
         part: 'snippet',
         maxResults: 1
     };
-const request = gapi.auth2.youtube.playlistItems.list(requestOptions);
+const request = gapi.client.youtube.playlistItems.list(requestOptions);
    request.execute(response=> {
    	console.log(response);
    });
