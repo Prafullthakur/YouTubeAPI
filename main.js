@@ -104,8 +104,8 @@ function requestVideoPlaylist(playlistID)
         maxResults: 10
 }
  const resquest = gapi.client.youtube.playlistItems.list(requestOptions);
-   resquest.execute(response)
+   resquest.execute(response=>
    {
    	console.log(response);
-   }
+   })
 }
