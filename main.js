@@ -96,16 +96,16 @@ function getChannel(Channel)
 function numberWithCommas(x){
 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
 }
-/*function requestVideoPlaylist(playlistID)
-{  
-	const requestoptions = {
-        playlistid : playlistid,
-        part: 'snippet',
-        maxResults: 1
-    };
- const request = gapi.client.youtube.playlistItems.list(requestoptions);
-   request.execute(response=>
-   {
-   	console.log(response);
-   });
-}*/
+//function requestVideoPlaylist(playlistID)
+//{  
+//	const requestoptions = {
+//        playlistid : playlistid,
+   //     part: 'snippet',
+  //      maxResults: 1
+ //   };
+// const request = gapi.client.youtube.playlistItems.list(requestoptions);
+//   request.execute(response=>
+ //  {
+  // 	console.log(response);
+//   });
+//}
