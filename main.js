@@ -21,13 +21,13 @@ function initClient()
 		clientId: Client_Id,
 		scope: SCOPES,
 	}).then(()=>{
-		 // updateSigninStatus(gapiAuthIntanse().isSignedIn.get());
-		 // authorizeButton.onclick = handleAuthClick;
-		 // signoutButton.onclick = handleSignoutClick;
+		    updateSigninStatus(gapiAuthIntanse().isSignedIn.get());
+		    authorizeButton.onclick = handleAuthClick;
+		    signoutButton.onclick = handleSignoutClick;
 	})
 }
 
-/*function updateSigninStatus(isSignedIn)
+function updateSigninStatus(isSignedIn)
 {
 	if(isSignedIn)
 	{
@@ -54,7 +54,3 @@ function handleSignoutClick()
 	gapi.auth2.getAuthInstance().signOut();
 }
 
-function getChannel(channel)
-{
-console.log(channel);
-}*/
