@@ -61,6 +61,8 @@ function getChannel(Channel)
 		part: 'snippet,contentDetails,statistics',
 		forUsername: Channel
 	})
-	.then()
+	.then(response=>{
+		console.log(response);
+	})
 	.catch(err=> alert('No Channel By That Name'));
 }
