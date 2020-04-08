@@ -99,7 +99,7 @@ function requestVideoPlaylist(ID)
 {
     gapi.client.youtube.playlistItems.list({
 	     ID : ID,
-        part: 'snippet,playlistID',
+        part: 'playlistID',
         maxresults: 10,
     })
    .then(response=>{
