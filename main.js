@@ -98,12 +98,12 @@ function numberWithCommas(x){
 }
 function requestVideoPlaylist(ID)
 {
-const request = gapi.client.youtube.playlistItems.list( {
+    gapi.client.youtube.playlistItems.list( {
 	     ID : ID,
         part: 'snippet',
         maxresults: 10,
-    });
-   request.execute(response=>{
+    })
+   .then(response=>{
    	console.log(response);
    });
 }
