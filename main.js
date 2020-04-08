@@ -71,7 +71,6 @@ function getChannel(Channel)
 		forUsername: Channel
 	})
 	.then(response=>{
-		console.log(response);
 		const channel = response.result.items[0];
 
 		const output = `
@@ -100,7 +99,7 @@ function requestVideoPlaylist(ID)
 {
     gapi.client.youtube.playlistItems.list({
 	     ID : ID,
-        part: 'snippet',
+        part: 'snippet,playlistID',
         maxresults: 10,
     })
    .then(response=>{
