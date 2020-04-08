@@ -97,7 +97,7 @@ function numberWithCommas(x){
 }
 function requestVideoPlaylist(ID)
 {
-    gapi.client.youtube.videos.list({
+    gapi.client.youtube.playlistItems.list({
 	     playlistId : ID,
         part: 'snippet',
         maxResults: 10,
