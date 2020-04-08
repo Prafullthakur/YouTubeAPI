@@ -105,5 +105,6 @@ function requestVideoPlaylist(ID)
     })
    .then(response=>{
    	console.log(response);
-   });
+   })
+   .catch(err=> alert('Request Cant Accepted'));
 }
