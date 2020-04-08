@@ -99,7 +99,7 @@ function numberWithCommas(x){
 function requestVideoPlaylist(id)
 {
 	const requestOptions = {
-	     ID : ,
+	     ID : id,
         part: "snippet",
         maxresults: 1,
     };
