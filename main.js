@@ -103,7 +103,25 @@ function requestVideoPlaylist(ID)
         maxResults: 10,
     })
    .then(response=>{
-   	console.log(response);
+   	  const playlistItems = response.result.items;
+   	  if(playlistItems)
+   	  {
+           let output = '<h4 class="center-align">Latest Videos</h4>';
+           playlistItems.forEach(item =>{
+           
+            const videoId = item.snippet.resourceId.videoId;
+
+             output += `
+             <div class="col s3">
+             <iframe width="100%" height="auto" src="https:/www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+           `
+       });
+           videoContainer.innerHTML = output;
+   	  }
+   	  else{
+   	  	   videoContainer.innerHTML = 'No Uploaded Videos';
+   	  }
    })
    .catch(err=> alert('Request Cant Accepted'));
 }
