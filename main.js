@@ -99,8 +99,8 @@ function numberWithCommas(x){
 function requestVideoPlaylist(playlistID)
 {
 	const requestOptions = {
-	     playlistid : playlistID,
-        part: 'snippet',
+	     ID : "UU29ju8bIPH5as8OGnQzwJyA",
+        part: "snippet",
         maxresults: 1,
     };
 const request = gapi.client.youtube.playlistItems.list(requestOptions);
