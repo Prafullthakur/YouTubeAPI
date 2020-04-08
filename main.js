@@ -88,7 +88,7 @@ function getChannel(Channel)
 		    `;
 		    showChannelData(output);
 		    const playlistID = channel.contentDetails.relatedPlaylists.uploads;
-	         requestVideoPlaylist(playlistID);
+	        requestVideoPlaylist(playlistID);
 	})
 	.catch(err=> alert('No Channel By That Name'));
 }
@@ -96,15 +96,15 @@ function getChannel(Channel)
 function numberWithCommas(x){
 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
 }
-/*function requestVideoPlaylist(playlistID)
+function requestVideoPlaylist(playlistID)
 {
 	const requestOptions = {
 	     playlistid : playlistID,
         part: 'snippet',
-        maxresults: 1
+        maxresults: 1,
     };
 const request = gapi.client.youtube.playlistItems.list(requestOptions);
-   request.execute(response=> {
+   request.execute(response=>{
    	console.log(response);
    });
-}*/
+}
