@@ -103,6 +103,7 @@ function requestVideoPlaylist(ID)
         maxResults: 10,
     })
    .then(response=>{
+   	  console.log(response);
    	  const playlistItems = response.result.items;
    	  if(playlistItems)
    	  {
