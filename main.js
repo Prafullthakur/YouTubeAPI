@@ -103,11 +103,10 @@ function requestVideoPlaylist(ID)
         maxResults: 10,
     })
    .then(response=>{
-   	  console.log(response);
    	  const playlistItems = response.result.items;
    	  if(playlistItems)
    	  {
-           let output = '<h4 class="center-align" style=margin-top:5px>Latest Videos</h4>';
+           let output = '<h4 class="center-align">Latest Videos</h4>';
            playlistItems.forEach(item =>{
            
             const videoId = item.snippet.resourceId.videoId;
