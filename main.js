@@ -112,11 +112,11 @@ function requestVideoPlaylist(ID)
            
             const videoId = item.snippet.resourceId.videoId;
               console.log(videoId);
-             /*output += `
+             output += `
              <div class="col s3">
-             <iframe width="100%" height="auto" src="https:/www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
              </div>
-           `*/
+           `
        });
            videoContainer.innerHTML = output;
    	  }
